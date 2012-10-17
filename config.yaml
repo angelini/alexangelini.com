@@ -1,0 +1,9 @@
+# Basic Cain Configuration
+main-url:   "http://alexangelini.com"
+
+rss-title:  "Alex Angelini's Blog"
+rss-desc:   "Thoughts, tales and tutorials on building cool shit"
+rss-author: "Alex Angelini"
+
+s3-bucket:  "alexangelini.com"
+s3-key:     "KLHE38HFE93"

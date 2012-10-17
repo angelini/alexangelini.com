@@ -1,0 +1,123 @@
+@fcolor: #333333;
+
+@blue: #69D2E7;
+@green: #A7DBD8;
+@beige: #E0E4CC;
+@lorange: #F38630;
+@dorange: #FA6900;
+@lgrey: #444444;
+
+@hfont: 'Lato', sans-serif;
+@mfont: 'Ubuntu', sans-serif;
+
+body {
+  font-family: @mfont;
+  font-size: 15px;
+}
+
+.bar {
+  position: static;
+  top: -35px;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #888;
+  .box-shadow(0 0 5px #888);
+}
+
+.bar.fix {
+  position: fixed;
+  .transition(top 0.5s);
+}
+
+.bar.fix:hover {
+  top: 0;
+}
+
+.bar .link {
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  color: @fcolor;
+}
+
+.bar .link i {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+
+.bar .link span {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+
+.bar:hover .link:hover span {
+  text-decoration: underline;
+}
+
+.bar .color1 {
+  background-color: @dorange;
+}
+
+.bar .color2 {
+  background-color: @green;
+}
+
+.bar .color3 {
+  background-color: @beige;
+}
+
+.bar .color4 {
+  background-color: @lorange;
+}
+
+.bar .color5 {
+  background-color: @blue;
+}
+
+.header {
+  margin: 25px 0 20px 0;
+  font-family: @hfont;
+}
+
+.description {
+  color: @lgrey;
+  font-size: 13px;
+  margin-bottom: 35px;
+}
+
+.post-summ {
+  margin-bottom: 20px;
+}
+
+.post-summ .date {
+  text-align: right;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.post header {
+  margin-bottom: 25px;
+}
+
+.post .title {
+  margin: 25px 0 4px 0;
+  font-family: @hfont; 
+}
+
+.box-shadow(@arguments) {
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.transition(@arguments) {
+  transition: @arguments;
+  -moz-transition: @arguments;
+  -webkit-transition: @arguments;
+  -o-transition: @arguments;
+}
